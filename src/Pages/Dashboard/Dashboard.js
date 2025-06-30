@@ -1,16 +1,8 @@
 import React from "react";
 import css from "./Dashboard.module.css";
-// import Statistics from "../../Components/Statistics/Statistics";
-// import Orders from "../../Components/Orders/Orders";
-import {
-  cardsData,
-  ordersData,
-  groupNumber,
-  INITIAL_EVENTS,
-  userData,
-  boardData,
-} from "../../data/data";
-
+import Statistics from "../../Components/Statistics/Statistics";
+import Orders from "../../Components/Orders/Orders";
+import { cardsData, groupNumber } from "../../data/data";
 const Dashboard = () => {
   return (
     <div className={css.container}>
@@ -44,10 +36,10 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* <Statistics /> */}
+        <Statistics />
       </div>
 
-      {/* <Orders /> */}
+      <Orders />
     </div>
   );
 };
